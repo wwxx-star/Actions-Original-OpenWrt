@@ -11,9 +11,8 @@
 #
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generate
 #sed -i 's/192.168.1.1/192.168.6.5/g' package/base-files/files/bin/config_generate
-#sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generate
 
 # 删除原版softethervpn插件
 rm -rf feeds/packages/net/softethervpn
@@ -38,25 +37,13 @@ rm -rf package/feeds/packages/xray-core
 
 # 拉取passwall源码
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
-#git clone https://github.com/lxhao61/openwrt-passwall.git package/passwall
+git clone -b master  https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+git clone -b luci  https://github.com/xiaorouji/openwrt-passwall.git  package/luci-app-passwall
+git clone  https://github.com/panther706/luci-app-adguardhome.git  package/luci-app-adguardhome
 
 # 删除passwall中xray-core核心
 #rm -rf package/passwall/xray-core
 
-# lean插件相关
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ipv6-helper package/lean/ipv6-helper
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-autoreboot package/lean/luci-app-autoreboot
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ddns-scripts_aliyun package/lean/ddns-scripts_aliyun
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ddns-scripts_dnspod package/lean/ddns-scripts_dnspod
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-syncdial package/lean/luci-app-syncdial
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/vlmcsd package/lean/vlmcsd
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-vlmcsd package/lean/luci-app-vlmcsd
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-guest-wifi package/lean/luci-app-guest-wifi
-
-# lienol其它插件
-#svn co https://github.com/Lienol/openwrt-packages/trunk/net/ipsec-tools package/lienol/ipsec-tools
-#svn co https://github.com/Lienol/openwrt-packages/trunk/net/strongswan package/lienol/strongswan
-#svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-ipsec-vpnserver-manyusers package/lienol/luci-app-ipsec-vpnserver-manyusers
-#svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns package/lienol/smartdns
-#svn co https://github.com/Lienol/openwrt-luci/trunk/applications/luci-app-smartdns package/lienol/luci-app-smartdns
-#svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-guest-wifi package/lienol/luci-app-guest-wifi
+# pushd feeds/packages/lang
+# rm -rf golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
+# popd
