@@ -44,6 +44,6 @@ git clone  https://github.com/panther706/luci-app-adguardhome.git  package/luci-
 # 删除passwall中xray-core核心
 #rm -rf package/passwall/xray-core
 
-# pushd feeds/packages/lang
-# rm -rf golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
-# popd
+pushd feeds/packages/lang
+rm -rf golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
+popd
