@@ -39,8 +39,10 @@ sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generat
 # git clone -b master  https://github.com/vernesong/OpenClash.git package/luci-app-openclash
 # git clone -b luci  https://github.com/xiaorouji/openwrt-passwall.git  package/luci-app-passwall
 # git clone  https://github.com/panther706/luci-app-adguardhome.git  package/luci-app-adguardhome
-git clone  https://github.com/kenzok8/openwrt-packages.git  package/kenzo
+# git clone  https://github.com/kenzok8/openwrt-packages.git  package/kenzo
+git clone  https://github.com/kenzok8/small-package.git  package/small-package
 git clone  https://github.com/kenzok8/small.git  package/small
+
 # 删除passwall中xray-core核心
 #rm -rf package/passwall/xray-core
 
