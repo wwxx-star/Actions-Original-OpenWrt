@@ -40,9 +40,7 @@ sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generat
 # # git clone https://github.com/xiaoxiao29/luci-app-adguardhome.git  package/luci-app-adguardhome 
 
 
-sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+git clone https://github.com/yfdoor/OpenWrt-Packages.git          package/yfdoorg
 # git clone -b master  https://github.com/vernesong/OpenClash.git package/luci-app-openclash
 # git clone -b luci  https://github.com/xiaorouji/openwrt-passwall.git  package/luci-app-passwall
 # git clone  https://github.com/panther706/luci-app-adguardhome.git  package/luci-app-adguardhome
