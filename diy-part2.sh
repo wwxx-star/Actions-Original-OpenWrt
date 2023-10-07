@@ -36,8 +36,8 @@ sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generat
 
 # 拉取passwall源码
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall/packages
-#  git clone https://github.com/Leslie-Wong/luci-app-passwall.git package/passwall/luci
-git clone https://github.com/Yangself666/luci-app-passwall.git package/passwall/luci
+git clone https://github.com/Leslie-Wong/luci-app-passwall.git package/passwall/luci/luci-app-passwall
+# #git clone https://github.com/Yangself666/luci-app-passwall.git package/passwall/luci
 # # git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall/luci
 git clone https://github.com/xiaoxiao29/luci-app-adguardhome.git  package/luci-app-adguardhome 
 
