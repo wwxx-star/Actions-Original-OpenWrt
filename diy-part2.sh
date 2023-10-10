@@ -40,7 +40,7 @@ git clone https://github.com/Leslie-Wong/luci-app-passwall.git package/passwall/
 # #git clone https://github.com/Yangself666/luci-app-passwall.git package/passwall/luci
 # # git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall/luci
 git clone https://github.com/xiaoxiao29/luci-app-adguardhome.git  package/luci-app-adguardhome 
-
+git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 
 # # git clone https://github.com/yfdoor/OpenWrt-Packages.git          package/yfdoorg
 # git clone -b master  https://github.com/vernesong/OpenClash.git package/luci-app-openclash
