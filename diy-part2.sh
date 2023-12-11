@@ -42,7 +42,8 @@ sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generat
 #git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall/packages
 # #git clone https://github.com/xiaoxiao29/luci-app-adguardhome.git  package/luci-app-adguardhome 
 # #git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
-git clone https://github.com/wwxx-star/openwrt-packages1  package/openwrt-packages
+# #git clone https://github.com/wwxx-star/openwrt-packages1  package/openwrt-packages
+git clone https://github.com/muink/openwrt-packages  package/openwrt-packages
 # #git clone https://github.com/yfdoor/OpenWrt-Packages.git          package/yfdoorg
 # #git clone https://github.com/haiibo/openwrt-packages package/haiibo
 #git clone -b master  https://github.com/vernesong/OpenClash.git package/luci-app-openclash
